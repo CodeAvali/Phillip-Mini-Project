@@ -1,0 +1,27 @@
+<! Doctype html>
+<html>
+<head>
+<title>index test</title>
+<script>
+function fn_last_letter(){
+letter=document.getElementById("txt_input").value;
+document.getElementById("txt_output").value=letter.charAt(-1);
+
+}
+</script>
+
+</head>
+<body>
+<p id="id_test">This_is_a_long_string</p>
+<form>
+<input type="text" id="txt_input">
+<input type="button" onclick="fn_last_letter()" value="press me">
+<input type="text" id="txt_output">
+</form>
+<p id="id_last_letter"></p>
+
+</body>
+
+
+
+</html>

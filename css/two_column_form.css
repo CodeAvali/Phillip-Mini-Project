@@ -1,0 +1,56 @@
+input.table25,td{
+    width:25px;
+}
+.control{
+    width:65px;
+}
+.height25{
+    height:25px;
+}
+
+/* label element for input */
+.correct{
+    visibility:visible;
+    color: #030;
+}
+.incorrect{
+    visibility:visible;
+    color:#300;
+}
+.binary_width{
+    width:350px;
+}
+.cl_binary{
+    font-family: courier;
+    font-weight: bold;
+    color:#00f;
+}
+label{
+    width:300px;
+    display:inline-block;
+}
+input{
+    width:65px;
+    font-family: courier;
+    color:#00f;
+    font-weight: bold;
+}
+input.digit16{
+    width:150px;
+}
+.addition_width{
+    width:325px;
+}
+.denary_twos_complement{
+    width:450px;
+}
+.cl_bias_width{
+    width:420px
+}
+.cl_mask{
+    width:15px;
+    text-align:center;
+}
+.binary_addition_lbl{
+    width:100px;
+}

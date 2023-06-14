@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Convert Denary to binary</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main_css.css">
+        <link rel="stylesheet" type="text/css" href="../css/two_column_form.css">       
+        <script type="text/javascript" src="../javascript/denary_to_binary.js"></script>    
+        <script type="text/javascript" src="../javascript/controls.js"></script>    
+    </head>
+    <body onload="fn_random()">
+        <div id="content">
+            <h1>Convert Denary to Binary</h1>
+            <p>Input the binary equivalent of the denary numbers into the textboxes</p>
+            <form>
+                <div class="height25">
+                    <label for="id_binary0">The denary number <span id="id_denary0">Denary</span> in binary is </label>
+                    <input type="text" name="binary0" id="id_binary0"> <span id="id_answer0">&nbsp;</span> <span id="id_correct0">&nbsp;</span>
+                </div>
+                <div class="height25">
+                    <label for="id_binary1">The denary number <span id="id_denary1">Denary</span> in binary is </label>
+                    <input type="text" name="binary1" id="id_binary1"> <span id="id_answer1">&nbsp;</span> <span id="id_correct1">&nbsp;</span>
+                </div>
+                <div class="height25">
+                    <label for="id_binary2">The denary number <span id="id_denary2">Denary</span> in binary is </label>
+                    <input type="text" name="binary2" id="id_binary2"> <span id="id_answer2">&nbsp;</span> <span id="id_correct2">&nbsp;</span>
+                </div>
+                <div class="height25">
+                    <label for="id_binary3">The denary number <span id="id_denary3">Denary</span> in binary is </label>
+                    <input type="text" name="binary3" id="id_binary3"> <span id="id_answer3">&nbsp;</span> <span id="id_correct3">&nbsp;</span>
+                </div>
+                <div class="height25">
+                    <label for="id_binary4">The denary number <span id="id_denary4">Denary</span> in binary is </label>
+                    <input type="text" name="binary4" id="id_binary4"> <span id="id_answer4">&nbsp;</span> <span id="id_correct4">&nbsp;</span>
+                </div>
+
+                <div class="height25">
+                    <label>&nbsp;</label>
+                    <input type="button" name="test" id="id_test" value="Test" onclick="fn_test()">
+                    <input type="button" name="retest" id="id_retest" value="Retest" onclick="fn_retest()">
+                    <input type="button" name="correct" id="id_correct" value="Show" onclick="fn_show()">
+                    <input type="hidden" name="control" id="id_control" value="0">
+                </div>
+            </form>
+            <p id="id_result">You have scored <span id="id_score">&nbsp;</span> out of a possible <span id="id_question_no">&nbsp;</span></p>
+            <form>
+                    <input type="hidden" name="b0" id="id_b0">
+                    <input type="hidden" name="b1" id="id_b1">
+                    <input type="hidden" name="b2" id="id_b2">
+                    <input type="hidden" name="b3" id="id_b3">
+                    <input type="hidden" name="b4" id="id_b4">
+            </form>
+        <p><a href="../index.html">index</a></p>
+        </div>     
+    </body>
+</html>

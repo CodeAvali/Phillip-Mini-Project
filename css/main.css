@@ -1,0 +1,17 @@
+/* 
+    Created on : 19-Dec-2016, 11:20:30
+    Author     : Philip Morris
+*/
+body{
+    font-family: arial;
+    max-width: 700px;
+    margin: auto;
+}
+input,td{
+    text-align: center;
+}
+h2{
+    color:blue;
+}
+
+
