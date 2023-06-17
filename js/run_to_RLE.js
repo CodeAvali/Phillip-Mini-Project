@@ -1,4 +1,4 @@
-function Random_colour(){
+function fn_random(){
   let colours = Math.floor(Math.random() * 3);
   if (colours == 0){
     return "R"
@@ -11,7 +11,7 @@ function Random_colour(){
   }
 }
 
-function RLE(){
+function fn_answerR(){
   const colours = 3 
   let New = ""
   let Old = ""
@@ -19,7 +19,7 @@ function RLE(){
   let Stack = 0
   let Ans = ""
   for(length = 10; length != 0; length--) {
-    New = Random_colour()
+    New = fn_random()
     Set += New
     if (New == Old){
       Stack += 1 
@@ -32,7 +32,10 @@ function RLE(){
   }
   Ans += (Stack + Old)
   Ans = Ans.replace('0','')
-  return set, ans
+
+  //Output to HTML var//
+  console.log(Set)
+  console.log(Ans)
+  document.getElementById("id_rle0").innerHTML = Set;
 }
 
-RLE()
